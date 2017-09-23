@@ -17,7 +17,7 @@ stages:
 build-paper:
   stage: build
   script:
-    - xelatex paper.tex
+    - latexmk -pdf paper.tex
   artifacts:
     paths:
         - "paper.pdf"
